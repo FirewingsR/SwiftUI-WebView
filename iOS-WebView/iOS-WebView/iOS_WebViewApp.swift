@@ -6,9 +6,25 @@
 //
 
 import SwiftUI
+import UIKit
 
 @main
-struct iOS_WebViewApp: App {
+struct SwiftUIDemoAppWrapper {
+    static func main() {
+        if #available(iOS 14.0, *) {
+            SwiftUIDemoApp.main()
+        } else {
+            UIApplicationMain(
+                CommandLine.argc,
+                CommandLine.unsafeArgv,
+                nil,
+                NSStringFromClass(SceneDelegate.self))
+        }
+    }
+}
+
+@available(iOS 14.0, *)
+struct SwiftUIDemoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

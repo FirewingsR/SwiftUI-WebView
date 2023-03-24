@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D15040829CC625400C93466 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D15040729CC625300C93466 /* SceneDelegate.swift */; };
+		3D15041329CD439700C93466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D15041229CD439700C93466 /* Main.storyboard */; };
 		3D54312E29CB49A700AC42A9 /* iOS_WebViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D54312D29CB49A700AC42A9 /* iOS_WebViewApp.swift */; };
 		3D54313029CB49A700AC42A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D54312F29CB49A700AC42A9 /* ContentView.swift */; };
 		3D54313229CB49A800AC42A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D54313129CB49A800AC42A9 /* Assets.xcassets */; };
@@ -15,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D15040729CC625300C93466 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3D15040929CC6EF400C93466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3D15041229CD439700C93466 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3D54312A29CB49A700AC42A9 /* iOS-WebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-WebView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D54312D29CB49A700AC42A9 /* iOS_WebViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_WebViewApp.swift; sourceTree = "<group>"; };
 		3D54312F29CB49A700AC42A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,9 +58,12 @@
 		3D54312C29CB49A700AC42A9 /* iOS-WebView */ = {
 			isa = PBXGroup;
 			children = (
+				3D15040929CC6EF400C93466 /* Info.plist */,
 				3D54313B29CB4A0F00AC42A9 /* WebView.swift */,
 				3D54312D29CB49A700AC42A9 /* iOS_WebViewApp.swift */,
 				3D54312F29CB49A700AC42A9 /* ContentView.swift */,
+				3D15040729CC625300C93466 /* SceneDelegate.swift */,
+				3D15041229CD439700C93466 /* Main.storyboard */,
 				3D54313129CB49A800AC42A9 /* Assets.xcassets */,
 				3D54313329CB49A900AC42A9 /* Preview Content */,
 			);
@@ -128,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D15041329CD439700C93466 /* Main.storyboard in Resources */,
 				3D54313529CB49A900AC42A9 /* Preview Assets.xcassets in Resources */,
 				3D54313229CB49A800AC42A9 /* Assets.xcassets in Resources */,
 			);
@@ -143,6 +152,7 @@
 				3D54313C29CB4A0F00AC42A9 /* WebView.swift in Sources */,
 				3D54313029CB49A700AC42A9 /* ContentView.swift in Sources */,
 				3D54312E29CB49A700AC42A9 /* iOS_WebViewApp.swift in Sources */,
+				3D15040829CC625400C93466 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,11 +284,13 @@
 				DEVELOPMENT_TEAM = XVV49D55G9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "iOS-WebView/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,11 +315,13 @@
 				DEVELOPMENT_TEAM = XVV49D55G9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "iOS-WebView/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

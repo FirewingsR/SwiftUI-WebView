@@ -10,7 +10,7 @@ import WebKit
 import AVFoundation
 
 struct ContentView: View {
-  @StateObject var webViewStore = WebViewStore()
+  @State var webViewStore = WebViewStore()
   
   var body: some View {
     NavigationView {
